@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stack button and grid vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+}
+
+#new-grid-button {
+    margin-bottom: 10px; /* Space between button and grid */
+    padding: 10px 20px; /* Add padding for better appearance */
+    font-size: 16px; /* Increase font size for better visibility */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px; /* Fixed width */
+    height: 960px; /* Fixed height */
+    border: 1px solid black; 
+}
+
+.grid-item {
+    background-color: lightblue;
+    border: 1px solid black; 
+    box-sizing: border-box; 
+    width: calc(100% / 16); /* Default to 16 columns */
+    height: calc(100% / 16); /* Default to 16 rows */
+}
+
+.grid-item.hovered {
+    background-color: coral; /* Color on hover */
+}
